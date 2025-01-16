@@ -30,9 +30,9 @@ st.markdown("")
 st.markdown("Baixe o arquivo .fmf e abra a aba de **jogadores abrangidos**. Adicione a view aos jogadores")
 st.download_button(
     label="Download da view de análise dos jogadores",
-    data=open("Arquivos para download/dados_analise_jogadores.fmf", "rb"),
-    file_name="dados_analise_jogadores.fmf",
-    mime='application/fmf'
+    data=open("Arquivos para download/dados_analise_fm.zip", "rb"),
+    file_name="dados_analise_jogadores.zip",
+    mime='application/zip'
 )
 
 st.markdown("")
