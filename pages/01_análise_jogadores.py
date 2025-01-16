@@ -123,10 +123,10 @@ filtrada_notas_jogadores = notas_jogadores.filter(
 
 # Seleção de colunas a se mostrar
 st.session_state["colunas_fixas"] = ['Nome', 'Nota com liga', 'Divisão', 'Posição', 'Altura', 'Idade', 'Salário',
-                                     'Dias Restantes Contrato', 'Jogos', 'Mins', 'Mins / Jogo', 'Classificação Média']
+                                     'Valor Estimado', 'Dias Restantes Contrato', 'Jogos', 'Mins',
+                                     'Mins / Jogo', 'Classificação Média']
 COLS_INFOS_GERAIS = [
-    'Personalidade', 'Multiplicador Liga',
-    'Valor Estimado', '% de jogos titular'
+    'Personalidade', 'Multiplicador Liga', '% de jogos titular'
 ]
 COLS_STATS_OFENSIVO = [
     'Performance XG', 'Gols', 'XG', 'Gols/90', 'XG/90', '% Remates no gol', 'Remates ao gol/90', 'Remates/90',

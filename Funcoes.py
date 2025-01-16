@@ -14,8 +14,15 @@ MAP_PRECISAO_PES = {
     'Muito Fraco': 0
 }
 PESOS_PRE_DEFINIDOS = {
-    "Atacante Matador": "Pesos/pesos_atacantes_v2.json",
-    "Atacante Criação": "Pesos/pesos_atacantes_criacao_teste.json"
+    "Atacante Matador": "Pesos/atacante_matador.json",
+    "Atacante Fixo / Cone": "Pesos/atacante_cone.json",
+    "Ponta driblador": "Pesos/ponta_driblador.json",
+    "Meia criativo": "Pesos/meia_criativo.json",
+    "Meia Box to Box": "Pesos/meia_box_to_box.json",
+    "Recuperador de bolas": "Pesos/recuperador_de_bolas.json",
+    "Lateral ofensivo": "Pesos/lateral_ofensivo.json",
+    "Defensor xerife": "Pesos/zagueiro_xerife.json",
+    "Pesos zerados": "Pesos/pesos_zerados.json"
 }
 
 COLS_FLOAT_E_GRADIENTE = [

@@ -16,7 +16,7 @@ if 'cache' not in st.session_state:
 
 # Construção de pesos e notas dos jogadores
 if "pesos_escolhidos" not in st.session_state:
-    st.session_state["pesos_escolhidos"] = Funcoes.usar_pesos_json("Pesos/pesos_atacantes_v2.json")
+    st.session_state["pesos_escolhidos"] = Funcoes.usar_pesos_json("Pesos/pesos_zerados.json")
 
     colunas_importantes_pesos = [col for col, peso in st.session_state["pesos_escolhidos"].items() if peso != 0]
     st.session_state.cache["colunas_para_mostrar"] = colunas_importantes_pesos
