@@ -31,7 +31,8 @@ with col1:
         PESOS_PRE_DEFINIDOS.keys(),
         placeholder="Escolha um peso pré-definido",
         on_change=Funcoes.update_pesos_cache,
-        key="peso_selecionado"
+        key="peso_selecionado",
+        index=None
     )
 
 with col2:

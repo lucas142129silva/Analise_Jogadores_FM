@@ -351,7 +351,7 @@ def distribuir_pesos_atributos(lista_atributos):
 
 def update_pesos_cache():
     st.session_state["pesos_escolhidos"] = usar_pesos_json(PESOS_PRE_DEFINIDOS[st.session_state["peso_selecionado"]])
-
+    atualizar_colunas_importantes_pesos()
 
 def download_json_data(data):
     json_data = json.dumps(data)
