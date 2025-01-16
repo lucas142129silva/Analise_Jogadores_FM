@@ -4,6 +4,7 @@ import Funcoes
 import json
 
 PESOS_PRE_DEFINIDOS = {
+    "Pesos zerados": "Pesos/pesos_zerados.json",
     "Atacante Matador": "Pesos/atacante_matador.json",
     "Atacante Fixo / Cone": "Pesos/atacante_cone.json",
     "Ponta driblador": "Pesos/ponta_driblador.json",
@@ -11,8 +12,7 @@ PESOS_PRE_DEFINIDOS = {
     "Meia Box to Box": "Pesos/meia_box_to_box.json",
     "Recuperador de bolas": "Pesos/recuperador_de_bolas.json",
     "Lateral ofensivo": "Pesos/lateral_ofensivo.json",
-    "Defensor xerife": "Pesos/zagueiro_xerife.json",
-    "Pesos zerados": "Pesos/pesos_zerados.json"
+    "Defensor xerife": "Pesos/zagueiro_xerife.json"
 }
 
 
