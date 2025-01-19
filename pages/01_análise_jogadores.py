@@ -71,7 +71,7 @@ with pos_col5:
 texto_direita = ".?" if "D" not in lados_selecionados else "D"
 texto_esquerda = ".?" if "E" not in lados_selecionados else "E"
 texto_centro = ".?" if "C" not in lados_selecionados else "C"
-filtro_lado_regex = f"\(?{texto_direita}{texto_esquerda}{texto_centro}\)?"
+filtro_lado_regex = f"\({texto_direita}{texto_esquerda}{texto_centro}\)"
 
 # Regex da posição (ela pode ser primária, secundária)
 filtro_posicao_regex = (f"(^{TRADUCAO_POSICOES[st.session_state.cache["posicao_selecionada"]]})"
@@ -175,6 +175,9 @@ colunas_selecionadas = filtrada_notas_jogadores.select(
     pl.col(st.session_state["colunas_fixas"]),
     pl.col(st.session_state.cache["colunas_para_mostrar"]).exclude(st.session_state["colunas_fixas"])
 )
+
+# Retirar duplicadas de nome - bug de mesmo jogador aparecer em duas linhas diferentes
+colunas_selecionadas = colunas_selecionadas.unique("Nome", keep="first").sort("Nota com liga", descending=True)
 
 # Mostrar tabela
 tabela_estilizada = Funcoes.estilizar_tabela(colunas_selecionadas)
