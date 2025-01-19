@@ -104,6 +104,12 @@ dados_posicao_escolhida = st.session_state["dados_brutos_analise"].filter(
     pl.col("Mins").gt(minimo_minutos)
 )
 
+# Dias de contrato de restante
+dados_posicao_escolhida = dados_posicao_escolhida.with_columns(
+    (pl.col("Data final contrato") - st.session_state.cache["data_selecionada"])
+        .dt.total_days().alias("Dias Restantes Contrato")
+)
+
 if len(lados_selecionados) > 0:
     dados_posicao_escolhida = dados_posicao_escolhida.filter(
         pl.col("Posição").str.contains(filtro_lado_regex)
